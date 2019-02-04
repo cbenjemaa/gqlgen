@@ -94,6 +94,10 @@ func (r *queryResolver) KeywordArgs(ctx context.Context, breakArg string, defaul
 	panic("not implemented")
 }
 
+func (r *queryResolver) ShapeUnion(ctx context.Context) (ShapeUnion, error) {
+	panic("not implemented")
+}
+
 type subscriptionResolver struct{ *Resolver }
 
 func (r *subscriptionResolver) Updated(ctx context.Context) (<-chan string, error) {
